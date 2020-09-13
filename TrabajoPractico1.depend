@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1599945008 source:d:\codeblock\pruebas\trabajopractico1\main.c
+1599962405 source:d:\codeblock\pruebas\trabajopractico1\main.c
 	<stdio.h>
 	<stdlib.h>
 	<ctype.h>
 	"Funciones.h"
 
-1599939478 source:d:\codeblock\pruebas\trabajopractico1\funciones.c
+1599950646 source:d:\codeblock\pruebas\trabajopractico1\funciones.c
 	"Funciones.h"
 
-1599935538 d:\codeblock\pruebas\trabajopractico1\funciones.h
+1599950646 d:\codeblock\pruebas\trabajopractico1\funciones.h
 

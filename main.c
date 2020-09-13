@@ -49,11 +49,34 @@ int main()
 
           printf("3. Calcular todas las operaciones\n\n");
 
-          printf("    a)suma (A+B)\n    b)resta (A-B)\n    c)division (A/B) \n    d)multiplicacion (A*B) \n    e)factorial (A!) \n\n");
+          if(banderaPrimerOperando == 0 && banderaSegundoOperando == 0)
+          {
+                  printf("    a)suma (A+B)\n    b)resta (A-B)\n    c)division (A/B) \n    d)multiplicacion (A*B) \n    e)factorial (A!) \n\n");
+          }
+          else
+          {
+                  printf("    a)suma (%d+%d) \n",primerOperando,segundoOperando);
+                  printf("    b)resta (%d+%d) \n",primerOperando,segundoOperando);
+                  printf("    c)division (%d+%d) \n",primerOperando,segundoOperando);
+                  printf("    d)multiplicacion (%d+%d) \n",primerOperando,segundoOperando);
+                  printf("    e)factorial  (%d!) \n\n",primerOperando);
+          }
 
           printf("4. Informar resultados \n\n");
 
-          printf(" El resultado de A+B es: r \n El resultado de A-B es: r \n El resultado de A/B es: r \n El resultado de A*B es: r  \n El factorial de A es: r1 y El factorial de B es: r2 \n\n");
+          if(resultadoBanderas == 0)
+          {
+                  printf(" El resultado de A+B es: r \n El resultado de A-B es: r \n El resultado de A/B es: r \n El resultado de A*B es: r  \n El factorial de A es: r1 y El factorial de B es: r2 \n\n");
+          }
+          else
+          {
+                  printf("   a) La suma total de (%d+%d) es : %d \n",primerOperando,segundoOperando,resultadoSuma);
+                  printf("   b) La resta de (%d-%d) es : %d \n",primerOperando,segundoOperando,resultadoResta);
+                  printf("   c) La division entre (%d/%d) es : %f \n",primerOperando,segundoOperando,resultadoDivision);
+                  printf("   d) La multiplicacion entre (%d*%d) es : %d \n",primerOperando,segundoOperando,resultadoMultiplicacion);
+                  printf("   e) El factorial de (%d!) es: %d y El factorial de (%d!) es :  %d \n\n",primerOperando,totalFactorial1,segundoOperando,totalFactorial2);
+
+          }
 
           printf("5. Salir \n\n");
 
@@ -84,7 +107,7 @@ int main()
                             printf("   b)resta (%d-%d) \n",primerOperando,segundoOperando);
                             resultadoResta = resta(primerOperando,segundoOperando);
 
-                            if (segundoOperando!=0)
+                            if (primerOperando !=0 || segundoOperando!=0 )
                             {
                                 printf("   c)division (%d/%d) \n",primerOperando,segundoOperando);
                                 resultadoDivision = division(primerOperando,segundoOperando);
@@ -127,7 +150,7 @@ int main()
 
 
 
-                            printf("   a) La suma total de (%d+%d) es : %d \n",primerOperando,segundoOperando,resultadoSuma);
+                            printf("   a) La suma de (%d+%d) es : %d \n",primerOperando,segundoOperando,resultadoSuma);
 
                             printf("   b) La resta de (%d-%d) es : %d \n",primerOperando,segundoOperando,resultadoResta);
 
@@ -166,7 +189,11 @@ int main()
                 break;
        }
 
+        system("pause");
+        system("cls");
         }while(opcion !=5);
+
+
 
 
     return 0;
