@@ -165,7 +165,9 @@ int main()
                         printf("Gracias por utilizar la calculadora \n");
                 break;
        }
-
+        
+        system("pause");
+        system("cls");
         }while(opcion !=5);
 
 
