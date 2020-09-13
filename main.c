@@ -188,7 +188,11 @@ int main()
                         printf("Gracias por utilizar la calculadora \n");
                 break;
        }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 4328a8f82d9052eb468e3612db6d6efc029896c3
         system("pause");
         system("cls");
         }while(opcion !=5);
